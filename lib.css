@@ -24,6 +24,8 @@ button {
 	padding: 0 16px;
 	background-color: white;
 	margin: 8px 8px;
+	height: 32px;
+    border: none;
 }
 
 button:hover, button:focus {
