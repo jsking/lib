@@ -1,0 +1,28 @@
+html, body, button, p, div {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+button {
+	border-radius: 2px;
+	padding: 0 16px;
+}
+
+button:hover, button:focus {
+  background-color: #27ae60;
+}
+
+button.orange {
+  background-color: #e67e22;
+}
+
+button.orange:hover, button.orange:focus {
+  background-color: #d35400;
+}
+
+button.red {
+  background-color: #e74c3c;
+}
+
+button.red:hover, button.red:focus {
+  background-color: #c0392b;
+}
