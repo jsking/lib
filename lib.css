@@ -2,27 +2,38 @@ html, body, button, p, div {
     font-family: 'Roboto', sans-serif !important;
 }
 
+.shadow-1dp {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.shadow-2dp {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.shadow-8dp {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.shadow-16dp {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
 button {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	border-radius: 2px;
 	padding: 0 16px;
+	background-color: white;
+	margin: 8px 8px;
 }
 
 button:hover, button:focus {
-  background-color: #27ae60;
+  background-color: #333333;
 }
 
 button.orange {
   background-color: #e67e22;
 }
 
-button.orange:hover, button.orange:focus {
-  background-color: #d35400;
-}
-
 button.red {
   background-color: #e74c3c;
-}
-
-button.red:hover, button.red:focus {
-  background-color: #c0392b;
 }
