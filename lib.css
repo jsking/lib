@@ -26,10 +26,12 @@ button {
 	margin: 8px 8px;
 	height: 32px;
     border: none;
+    filter: brightness(1.0);
+    transition: filter 0.1s ease-in-out;
 }
 
 button:hover, button:focus {
-  background-color: #333333;
+    filter: brightness(0.8);
 }
 
 button.orange {
