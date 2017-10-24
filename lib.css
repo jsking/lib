@@ -2,11 +2,16 @@ html, body, button, p, div {
     font-family: 'Roboto', sans-serif !important;
 }
 
-.shadow-1dp {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+body {
+    padding: 8px;
+    margin: 0;
 }
 
 .shadow-2dp {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.shadow-4dp {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -19,18 +24,24 @@ html, body, button, p, div {
 }
 
 button {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	border-radius: 2px;
 	padding: 0 16px;
 	background-color: white;
 	margin: 8px 8px;
 	height: 32px;
+	width: calc(100% - 16px);
     border: none;
     filter: brightness(1.0);
-    transition: filter 0.1s ease-in-out;
+    transition: filter 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    outline: none;
 }
 
-button:hover, button:focus {
+button:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+button:active {
     filter: brightness(0.8);
 }
 
@@ -40,4 +51,54 @@ button.orange {
 
 button.red {
   background-color: #e74c3c;
+}
+
+button.blue {
+  background-color: #2962ff;
+  color: white;
+}
+
+button.green {
+    background-color: #00e676;
+}
+
+#centerbody {
+    max-width: 600px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body:before {
+    position: fixed;
+    background-color: yellow;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 256px;
+}
+
+header {
+    font-size: 32px;
+    display: table-cell;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 72px;
+    padding-left: 16px;
+    line-height: 72px;
+}
+
+.hidden, input[type="file"] {
+    display: none;
+}
+
+canvas {
+    outline: 2px solid black;
+    margin: 8px;
 }
